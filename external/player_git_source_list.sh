@@ -12,7 +12,7 @@ if [[ -z "${FFMPEG_GIT}" ]];then
     FFMPEG_GIT=https://github.com/FFmpeg/FFmpeg.git
 fi
 if [[ -z "${FFMPEG_BRANCH}" ]];then
-    FFMPEG_BRANCH=n4.3.1
+    FFMPEG_BRANCH=n6.1.1 #4.3.1
 fi
 
 if [[ -z "${FFMPEG_NEED_PATCH}" ]];then
@@ -45,7 +45,7 @@ clone_git $CURL_GIT "$CURL_BRANCH"
 if [[ -z "${LIBXML2_GIT}" ]];then
     LIBXML2_GIT="https://github.com/GNOME/libxml2.git"
 fi
-LIBXML2_BRANCH="v2.9.9"
+LIBXML2_BRANCH="v2.9.10"
 clone_git ${LIBXML2_GIT} "$LIBXML2_BRANCH"
 
 if [[ -z "${DAV1D_EXTERNAL_DIR}" ]];then

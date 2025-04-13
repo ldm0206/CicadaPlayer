@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function android_armv7_a_init_env(){
-    NDK_V=14
+    NDK_V=16
     ABI=armeabi-v7a
     CPU_ARCH=arm
     CROSS_COMPILE=arm-linux-androideabi
@@ -55,7 +55,7 @@ function android_init_env_clang(){
         return
     fi
 
-    clang="${ANDROID_NDK}/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang"
+    clang="${ANDROID_NDK}/toolchains/llvm/prebuilt/${HOST}-x86_64/bin/clang"
 
     export NDK_TOOLCHAIN="$ANDROID_NDK/toolchains/$CROSS_COMPILE-4.9/prebuilt/${HOST}-x86_64"
 

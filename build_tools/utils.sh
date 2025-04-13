@@ -2,11 +2,11 @@
 
 
 function print_error(){
-    echo -e "\033[31m"$1"\033[0m"
+    echo -e "ERROR "$1
 }
 
 function print_warning(){
-    echo -e "\033[35m"$1"\033[0m"
+    echo -e "WARNING "$1
 }
 #echo -e "\033[30m 黑色字 \033[0m"
 #echo -e "\033[31m 红色字 \033[0m"
